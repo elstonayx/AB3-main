@@ -265,6 +265,177 @@ Format: <code>exit</code></p>
 </div>
 </div>
 <div class="sect1">
+<h2 id="exporting-contacts-code-export-code"><a class="link" href="#exporting-contacts-code-export-code">Exporting contacts : <code>export</code></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Shows a list of all persons in the address book.<br>
+Export all persons in the address book to mobile phone.<br>
+Format: <code>export FILETYPE</code></p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>export csv</code></p>
+</li>
+<li>
+<p><code>export vbf</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="enter-personal-weekly-schedule-code-schedule-code"><a class="link" href="#enter-personal-weekly-schedule-code-schedule-code">Enter personal weekly schedule : <code>schedule</code></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Format: <code>addschedule d/DDMMYYYY st/START-TIME et/END-TIME en/EVENT-NAME</code></p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>addschedule d/08112018 st/1000 et/1200 en/GER1000</code></p>
+</li>
+<li>
+<p><code>addschedule d/01012019 st/1000 et/1800 en/FireworkParty</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="list-common-schedule-code-commonschedule-code"><a class="link" href="#list-common-schedule-code-commonschedule-code">List Common Schedule : <code>commonschedule</code></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Shows a list of common meeting time for a group of contacts and the user in that given that given period of time.<br>
+Format: <code>commonschedule p/PERSON&#8230;&#8203;[PERSON] sd/START-DATE-DDMMYYYY ed/END-DATE-DDMMYYYY t/HOURS</code></p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>commonschedule p/John Smith p/Jane Doe sd/08092018 ed/01102018 t/1.5</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="list-unread-new-email-auto-reply-of-email-code-mail-code"><a class="link" href="#list-unread-new-email-auto-reply-of-email-code-mail-code">List Unread / New Email / Auto-reply of email: <code>mail</code></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Shows a list of unread or new emails of the user. Upen entering the index of the unread emails, the terminal will display the email’s title, body.
+The user can choose whether he wants to send an auto-reply to indicate that he has read it.<br>
+Format: <code>mail [i/INDEX]</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Keying the index is optional, without keying it, it will list all the mail items in the user’s current mailbox.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>mail</code></p>
+</li>
+<li>
+<p><code>Expected output: 0/Latest Pomelo Fashion 1/Quora - will PHP die in 2018 2/How to communicate effectively</code></p>
+</li>
+<li>
+<p><code>mail i/INDEX</code></p>
+</li>
+<li>
+<p><code>mail i/1</code></p>
+</li>
+<li>
+<p><code>Expected output: t/Quora - will PHP die in 2018 ct/PHP is terrible blablablablabla s/quora@quora.com E/would you like to send an auto-reply to the sender? (Y/n)</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="faq"><a class="link" href="#faq">FAQ</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Q: How do I transfer my data to another Computer?<br>
+A: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Jithub folder.</p>
+</div>
+<div class="paragraph">
+<p>Q: How do I export my contacts to my phone?<br>
+A: Use the export command to generate a csv/vbf file and transfer that file to your phone. Use your phone contacts app to import that file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="command-summary"><a class="link" href="#command-summary">Command Summary</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Add : <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS n/NICKNAME [t/TAG]…​</code></p>
+</li>
+<li>
+<p>Clear : <code>clear</code></p>
+</li>
+<li>
+<p>Delete : <code>delete INDEX</code></p>
+</li>
+<li>
+<p>Edit : <code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​</code></p>
+</li>
+<li>
+<p>Find : <code>find KEYWORD [MORE_KEYWORDS]</code></p>
+</li>
+<li>
+<p>List : <code>list</code></p>
+</li>
+<li>
+<p>Help : <code>help</code></p>
+</li>
+<li>
+<p>Select : <code>select INDEX</code></p>
+</li>
+<li>
+<p>History : <code>history</code></p>
+</li>
+<li>
+<p>Undo : <code>undo</code></p>
+</li>
+<li>
+<p>Redo : <code>redo</code></p>
+</li>
+<li>
+<p>Mail: <code>mail [i/INDEX]</code></p>
+</li>
+<li>
+<p>List Schedule: <code>commonschedule p/PERSON…[PERSON] sd/START-DATE-DDMMYYYY</code></p>
+</li>
+<li>
+<p>Add Schedule: <code>addschedule d/DDMMYYYY st/START-TIME et/END-TIME en/EVENT-NAME</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="saving-the-data"><a class="link" href="#saving-the-data">Saving the data</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -274,4 +445,4 @@ Format: <code>exit</code></p>
 <p>There is no need to save manually. Address book data are saved in a file called <code>addressbook.txt</code> in the project root folder.</p>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-09-12 14:22:50 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-09-16 15:39:47 UTC</div></div></div></body></html>
