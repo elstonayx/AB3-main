@@ -1,8 +1,12 @@
 # Generated class files
 *.class
+.classpath
 
 # Default data file
 addressbook.txt
+
+# Backup data file
+backupaddressbook.txt
 
 # Package Files #
 *.jar
@@ -22,3 +26,8 @@ publish.sh
 .gradle/
 build/
 
+# Generated project files
+.project
+
+# Generated setting files
+.settings
